@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data.Entity;
-using System.Data.Entity.Validation;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
@@ -14,108 +12,75 @@ namespace Caso_API.Controllers
         // GET: api/producto/obtenertodos
         [HttpGet]
         [Route("obtenertodos")]
-        public IHttpActionResult GetAll()
+        public IEnumerable<PRODUCTO> GetTodos()
         {
-            var items = db.PRODUCTO.ToList(); // sin OrderBy por Id
-            return Ok(items);
+            return db.PRODUCTO.ToList();
         }
 
         // GET: api/producto/obtenerid/5
         [HttpGet]
         [Route("obtenerid/{id:int}")]
-        public IHttpActionResult GetById(int id)
+        public IHttpActionResult GetPorId(int id)
         {
-            var p = db.PRODUCTO.Find(id); // usa la PK del EDMX
-            if (p == null) return NotFound();
-            return Ok(p);
+            var producto = db.PRODUCTO.Find(id);
+            if (producto == null)
+                return NotFound();
+
+            return Ok(producto);
         }
 
         // POST: api/producto/crearproducto
         [HttpPost]
         [Route("crearproducto")]
-        public IHttpActionResult Create([FromBody] PRODUCTO producto)
+        public IHttpActionResult Crear([FromBody] PRODUCTO producto)
         {
-            if (producto == null) return BadRequest("Datos inválidos.");
-            if (!ModelState.IsValid) return BadRequest("Modelo inválido.");
+            if (producto == null)
+                return BadRequest("Datos inválidos.");
 
-            try
-            {
-                db.PRODUCTO.Add(producto);
-                db.SaveChanges();
-                return Ok(producto);
-            }
-            catch (DbEntityValidationException ex)
-            {
-                foreach (var ve in ex.EntityValidationErrors.SelectMany(e => e.ValidationErrors))
-                    ModelState.AddModelError(ve.PropertyName, ve.ErrorMessage);
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-            }
-            catch (Exception ex)
-            {
-                return InternalServerError(ex);
-            }
+
+            db.PRODUCTO.Add(producto);
+            db.SaveChanges();
+
+            return Ok(producto);
         }
 
         // PUT: api/producto/actualizarproducto/5
         [HttpPut]
         [Route("actualizarproducto/{id:int}")]
-        public IHttpActionResult Update(int id, [FromBody] PRODUCTO producto)
+        public IHttpActionResult Actualizar(int id, [FromBody] PRODUCTO producto)
         {
-            if (producto == null) return BadRequest("Datos inválidos.");
-            if (!ModelState.IsValid) return BadRequest("Modelo inválido.");
+            if (producto == null)
+                return BadRequest("Datos inválidos.");
 
-            var existing = db.PRODUCTO.Find(id);
-            if (existing == null) return NotFound();
+            var existente = db.PRODUCTO.Find(id);
+            if (existente == null)
+                return NotFound();
 
-            try
-            {
-                // mapea solo campos editables existentes en tu EDMX
-                existing.Nombre = producto.Nombre;
-                existing.Descripcion = producto.Descripcion;
-                existing.Precio = producto.Precio;
-                existing.Stock = producto.Stock;
-                existing.Categoria = producto.Categoria;
+            existente.Nombre = producto.Nombre;
+            existente.Descripcion = producto.Descripcion;
+            existente.Precio = producto.Precio;
+            existente.Stock = producto.Stock;
+            existente.Categoria = producto.Categoria;
 
-                db.Entry(existing).State = EntityState.Modified;
-                db.SaveChanges();
-                return Ok(existing);
-            }
-            catch (DbEntityValidationException ex)
-            {
-                foreach (var ve in ex.EntityValidationErrors.SelectMany(e => e.ValidationErrors))
-                    ModelState.AddModelError(ve.PropertyName, ve.ErrorMessage);
-                return BadRequest(ModelState);
-            }
-            catch (Exception ex)
-            {
-                return InternalServerError(ex);
-            }
+            db.SaveChanges();
+            return Ok(existente);
         }
 
         // DELETE: api/producto/eliminarproducto/5
         [HttpDelete]
         [Route("eliminarproducto/{id:int}")]
-        public IHttpActionResult Delete(int id)
+        public IHttpActionResult Eliminar(int id)
         {
-            var existing = db.PRODUCTO.Find(id);
-            if (existing == null) return NotFound();
+            var producto = db.PRODUCTO.Find(id);
+            if (producto == null)
+                return NotFound();
 
-            try
-            {
-                db.PRODUCTO.Remove(existing);
-                db.SaveChanges();
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                return InternalServerError(ex);
-            }
-        }
+            db.PRODUCTO.Remove(producto);
+            db.SaveChanges();
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing) db.Dispose();
-            base.Dispose(disposing);
+            return Ok();
         }
     }
 }
