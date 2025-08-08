@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\U\Cuarti XI\Progra avanzada plus\Caso 2\Caso_2\Caso__2App\Caso_API\ModeloCaso.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\leidy\Source\Repos\Caso_2\Caso__2App\Caso_API\ModeloCaso.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.
