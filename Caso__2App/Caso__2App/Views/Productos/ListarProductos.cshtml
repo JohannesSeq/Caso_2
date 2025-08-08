@@ -1,7 +1,122 @@
-﻿
-@{
-    ViewBag.Title = "Productos";
+﻿@{
+    ViewBag.Title = "Listado de Productos";
 }
 
-<h2>Productos</h2>
+<h2>Listado de Productos</h2>
 
+<div class="mb-3 row align-items-center">
+    <div class="col-md-3">
+        <input type="text" id="filtroNombre" class="form-control" placeholder="Filtrar por nombre">
+    </div>
+    <div class="col-md-3">
+        <select id="filtroCategoria" class="form-control">
+            <option value="">-- Categoría --</option>
+            <option value="Fútbol">Fútbol</option>
+            <option value="Básquetbol">Básquetbol</option>
+            <option value="Natación">Natación</option>
+            <option value="Tenis">Tenis</option>
+        </select>
+    </div>
+    <div class="col-md-2">
+        <button class="btn btn-primary" id="btnFiltrar">Filtrar</button>
+    </div>
+    <div class="col-md-4 text-end">
+        @Html.ActionLink("Crear Producto", "Crear", "Productos", null, new { @class = "btn btn-success" })
+    </div>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody id="tablaProductos">
+        <tr>
+            <td colspan="7" class="text-center">Cargando...</td>
+        </tr>
+    </tbody>
+</table>
+
+@section scripts {
+    <script>
+        const API_BASE = "https://localhost:44360/api/producto";
+
+        $(document).ready(function () {
+            cargarProductos();
+
+            $("#btnFiltrar").click(function () {
+                cargarProductos();
+            });
+        });
+
+        function cargarProductos() {
+            let nombre = $("#filtroNombre").val();
+            let categoria = $("#filtroCategoria").val();
+
+            let url = API_BASE + "/obtenertodos";
+
+            $.get(url, function (data) {
+                let filtrados = data;
+
+                if (nombre) {
+                    filtrados = filtrados.filter(p =>
+                        p.Nombre.toLowerCase().includes(nombre.toLowerCase())
+                    );
+                }
+
+                if (categoria) {
+                    filtrados = filtrados.filter(p => p.Categoria === categoria);
+                }
+
+                renderTabla(filtrados);
+            });
+        }
+
+        function renderTabla(productos) {
+            let html = "";
+
+            if (productos.length === 0) {
+                html = `<tr><td colspan="7" class="text-center">No hay productos</td></tr>`;
+            } else {
+                productos.forEach(p => {
+                    html += `
+                        <tr>
+                            <td>${p.ID}</td>
+                            <td>${p.Nombre}</td>
+                            <td>${p.Descripcion || ""}</td>
+                            <td>${p.Precio}</td>
+                            <td>${p.Stock}</td>
+                            <td>${p.Categoria}</td>
+                            <td>
+                                <a href="@Url.Action("Editar","Productos")/${p.ID}" class="btn btn-warning btn-sm">Editar</a>
+                                <button class="btn btn-danger btn-sm" onclick="eliminarProducto(${p.ID})">Eliminar</button>
+                            </td>
+                        </tr>
+                    `;
+                });
+            }
+
+            $("#tablaProductos").html(html);
+        }
+
+        function eliminarProducto(id) {
+            if (confirm("¿Seguro que deseas eliminar este producto?")) {
+                $.ajax({
+                    url: API_BASE + "/eliminarproducto/" + id,
+                    type: "DELETE",
+                    success: function () {
+                        alert("Producto eliminado");
+                        cargarProductos();
+                    }
+                });
+            }
+        }
+    </script>
+}

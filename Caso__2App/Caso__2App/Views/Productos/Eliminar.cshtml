@@ -1,0 +1,59 @@
+﻿@* Views/Productos/Eliminar.cshtml *@
+@{
+    ViewBag.Title = "Eliminar Producto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var id = ViewBag.Id ?? Request.RequestContext.RouteData.Values["id"];
+}
+<h2>Eliminar Producto</h2>
+
+<div class="alert alert-warning">
+    <strong>Confirmación:</strong> ¿Eliminar el producto <span id="pNombre"></span> (ID: <span id="pId"></span>)?
+</div>
+
+<dl class="row">
+    <dt class="col-sm-2">Nombre</dt>
+    <dd class="col-sm-10" id="Nombre"></dd>
+    <dt class="col-sm-2">Descripción</dt>
+    <dd class="col-sm-10" id="Descripcion"></dd>
+    <dt class="col-sm-2">Precio</dt>
+    <dd class="col-sm-10" id="Precio"></dd>
+    <dt class="col-sm-2">Stock</dt>
+    <dd class="col-sm-10" id="Stock"></dd>
+    <dt class="col-sm-2">Categoría</dt>
+    <dd class="col-sm-10" id="Categoria"></dd>
+</dl>
+
+<div class="d-flex gap-2">
+    <button class="btn btn-danger" id="btnEliminar">Eliminar</button>
+    @Html.ActionLink("Cancelar", "ListarProductos", null, new { @class = "btn btn-secondary" })
+</div>
+
+@section scripts{
+    <script>
+const API_BASE = "https://localhost:44360/api/producto";
+const id = '@id';
+
+function cargar(){
+  $.getJSON(`${API_BASE}/obtenerid/${id}`)
+    .done(p=>{
+      $('#pId').text(p.ID);
+      $('#pNombre').text(p.Nombre);
+      $('#Nombre').text(p.Nombre);
+      $('#Descripcion').text(p.Descripcion || '');
+      $('#Precio').text('₡' + Number(p.Precio).toLocaleString());
+      $('#Stock').text(p.Stock);
+      $('#Categoria').text(p.Categoria);
+    })
+    .fail(()=>{ alert('No se pudo cargar.'); window.location='@Url.Action("ListarProductos")'; });
+}
+
+$('#btnEliminar').on('click', function(){
+  if(!confirm('¿Eliminar este producto?')) return;
+  $.ajax({ url: `${API_BASE}/eliminarproducto/${id}`, method: 'DELETE' })
+    .done(()=>window.location='@Url.Action("ListarProductos")')
+    .fail(x=>{ console.error(x.responseText); alert('Error al eliminar.'); });
+});
+
+$(cargar);
+    </script>
+}
