@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|c:\\users\\xpc\\documents\\github\\caso_2\\caso__2app\\caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|c:\\users\\xpc\\documents\\github\\caso_2\\caso__2app\\caso_api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\caso_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|c:\\users\\xpc\\documents\\github\\caso_2\\caso__2app\\caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 52,
+          "SelectedChildIndex": 51,
           "Children": [
             {
               "$type": "Bookmark",
@@ -226,25 +226,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Caso_API\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Models\\Producto.cs",
-              "RelativeToolTip": "Caso_API\\Models\\Producto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "Caso_API\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "Caso_API\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:15:25.926Z"
+              "WhenOpened": "2025-08-08T02:02:40.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PRODUCTOesController.cs",
               "DocumentMoniker": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
               "RelativeDocumentMoniker": "Caso_API\\Controllers\\PRODUCTOesController.cs",
               "ToolTip": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
               "RelativeToolTip": "Caso_API\\Controllers\\PRODUCTOesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-08T01:38:45.748Z",
               "EditorCaption": ""
