@@ -1,14 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\",
+  "WorkspaceRootPath": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|c:\\users\\xpc\\documents\\github\\caso_2\\caso__2app\\caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|d:\\u\\cuarti xi\\progra avanzada plus\\caso 2\\caso_2\\caso__2app\\caso__2app\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\caso_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\productos\\listarproductos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\productos\\listarproductos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso_api\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso_api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso__2app\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{06618325-9050-4CC2-BC47-68936026ECE7}|Caso__2App\\Caso__2App.csproj|solutionrelative:caso__2app\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso_api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05D3DD2E-4A80-48D5-B016-ABF36BF4F16A}|Caso_API\\Caso_API.csproj|solutionrelative:caso_api\\controllers\\productoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 52,
+          "SelectedChildIndex": 54,
           "Children": [
             {
               "$type": "Bookmark",
@@ -225,29 +269,177 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "Caso_API\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Models\\Producto.cs",
-              "RelativeToolTip": "Caso_API\\Models\\Producto.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwCQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:15:25.926Z"
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PRODUCTOesController.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
-              "RelativeDocumentMoniker": "Caso_API\\Controllers\\PRODUCTOesController.cs",
-              "ToolTip": "C:\\Users\\XPC\\Documents\\GitHub\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
-              "RelativeToolTip": "Caso_API\\Controllers\\PRODUCTOesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAANAAAAAAAAAA==",
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Caso__2App\\Controllers\\ProductosController.cs",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Caso__2App\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-08T01:38:45.748Z",
+              "WhenOpened": "2025-08-08T02:40:36.899Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Caso__2App\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Caso__2App\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:40:39.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:38:19.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:39:23.526Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ListarProductos.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Productos\\ListarProductos.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Productos\\ListarProductos.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Productos\\ListarProductos.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\Productos\\ListarProductos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:37:51.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:34:13.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:33:56.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Web.config",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\Web.config",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\Web.config",
+              "RelativeToolTip": "Caso__2App\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-08T02:33:44.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Caso__2App\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso__2App\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Caso__2App\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:33:43.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Caso_API\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Caso_API\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T02:31:27.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Caso_API\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Caso_API\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:30:10.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Caso_API\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Caso_API\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-08T02:29:41.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PRODUCTOesController.cs",
+              "DocumentMoniker": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
+              "RelativeDocumentMoniker": "Caso_API\\Controllers\\PRODUCTOesController.cs",
+              "ToolTip": "D:\\U\\Cuarti XI\\Progra avanzada plus\\Caso 2\\Caso_2\\Caso__2App\\Caso_API\\Controllers\\PRODUCTOesController.cs",
+              "RelativeToolTip": "Caso_API\\Controllers\\PRODUCTOesController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAIwAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-08T01:38:45.748Z"
             }
           ]
         },

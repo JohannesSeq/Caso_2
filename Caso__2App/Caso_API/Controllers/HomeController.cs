@@ -14,5 +14,13 @@ namespace Caso_API.Controllers
 
             return View();
         }
+
+        public ActionResult Productos()
+        {
+            ViewBag.Title = "Home Page";
+
+            return View();
+        }
+
     }
 }
