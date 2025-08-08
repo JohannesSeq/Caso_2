@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace SportsStore.Api.Models
+namespace Caso_API.Models
 {
     public static class ProductCategories
     {
