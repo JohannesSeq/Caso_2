@@ -1,126 +1,120 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
 using System.Data.Entity;
+using System.Data.Entity.Validation;
 using System.Linq;
-using System.Net;
-using System.Web;
-using System.Web.Mvc;
-using Caso_API;
+using System.Web.Http;
 
 namespace Caso_API.Controllers
 {
-    public class PRODUCTOesController : Controller
+    [RoutePrefix("api/producto")]
+    public class PRODUCTOesController : ApiController
     {
         private CASO_PRACTICO_2Entities db = new CASO_PRACTICO_2Entities();
 
-        // GET: PRODUCTOes
-        public ActionResult Index()
+        // GET: api/producto/obtenertodos
+        [HttpGet]
+        [Route("obtenertodos")]
+        public IHttpActionResult GetAll()
         {
-            return View(db.PRODUCTO.ToList());
+            var items = db.PRODUCTO.ToList(); // sin OrderBy por Id
+            return Ok(items);
         }
 
-        // GET: PRODUCTOes/Details/5
-        public ActionResult Details(int? id)
+        // GET: api/producto/obtenerid/5
+        [HttpGet]
+        [Route("obtenerid/{id:int}")]
+        public IHttpActionResult GetById(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PRODUCTO pRODUCTO = db.PRODUCTO.Find(id);
-            if (pRODUCTO == null)
-            {
-                return HttpNotFound();
-            }
-            return View(pRODUCTO);
+            var p = db.PRODUCTO.Find(id); // usa la PK del EDMX
+            if (p == null) return NotFound();
+            return Ok(p);
         }
 
-        // GET: PRODUCTOes/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: PRODUCTOes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: api/producto/crearproducto
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Nombre,Descripcion,Precio,Stock,Categoria")] PRODUCTO pRODUCTO)
+        [Route("crearproducto")]
+        public IHttpActionResult Create([FromBody] PRODUCTO producto)
         {
-            if (ModelState.IsValid)
+            if (producto == null) return BadRequest("Datos inválidos.");
+            if (!ModelState.IsValid) return BadRequest("Modelo inválido.");
+
+            try
             {
-                db.PRODUCTO.Add(pRODUCTO);
+                db.PRODUCTO.Add(producto);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Ok(producto);
             }
-
-            return View(pRODUCTO);
+            catch (DbEntityValidationException ex)
+            {
+                foreach (var ve in ex.EntityValidationErrors.SelectMany(e => e.ValidationErrors))
+                    ModelState.AddModelError(ve.PropertyName, ve.ErrorMessage);
+                return BadRequest(ModelState);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
-        // GET: PRODUCTOes/Edit/5
-        public ActionResult Edit(int? id)
+        // PUT: api/producto/actualizarproducto/5
+        [HttpPut]
+        [Route("actualizarproducto/{id:int}")]
+        public IHttpActionResult Update(int id, [FromBody] PRODUCTO producto)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PRODUCTO pRODUCTO = db.PRODUCTO.Find(id);
-            if (pRODUCTO == null)
-            {
-                return HttpNotFound();
-            }
-            return View(pRODUCTO);
-        }
+            if (producto == null) return BadRequest("Datos inválidos.");
+            if (!ModelState.IsValid) return BadRequest("Modelo inválido.");
 
-        // POST: PRODUCTOes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Nombre,Descripcion,Precio,Stock,Categoria")] PRODUCTO pRODUCTO)
-        {
-            if (ModelState.IsValid)
+            var existing = db.PRODUCTO.Find(id);
+            if (existing == null) return NotFound();
+
+            try
             {
-                db.Entry(pRODUCTO).State = EntityState.Modified;
+                // mapea solo campos editables existentes en tu EDMX
+                existing.Nombre = producto.Nombre;
+                existing.Descripcion = producto.Descripcion;
+                existing.Precio = producto.Precio;
+                existing.Stock = producto.Stock;
+                existing.Categoria = producto.Categoria;
+
+                db.Entry(existing).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return Ok(existing);
             }
-            return View(pRODUCTO);
+            catch (DbEntityValidationException ex)
+            {
+                foreach (var ve in ex.EntityValidationErrors.SelectMany(e => e.ValidationErrors))
+                    ModelState.AddModelError(ve.PropertyName, ve.ErrorMessage);
+                return BadRequest(ModelState);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
-        // GET: PRODUCTOes/Delete/5
-        public ActionResult Delete(int? id)
+        // DELETE: api/producto/eliminarproducto/5
+        [HttpDelete]
+        [Route("eliminarproducto/{id:int}")]
+        public IHttpActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            PRODUCTO pRODUCTO = db.PRODUCTO.Find(id);
-            if (pRODUCTO == null)
-            {
-                return HttpNotFound();
-            }
-            return View(pRODUCTO);
-        }
+            var existing = db.PRODUCTO.Find(id);
+            if (existing == null) return NotFound();
 
-        // POST: PRODUCTOes/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            PRODUCTO pRODUCTO = db.PRODUCTO.Find(id);
-            db.PRODUCTO.Remove(pRODUCTO);
-            db.SaveChanges();
-            return RedirectToAction("Index");
+            try
+            {
+                db.PRODUCTO.Remove(existing);
+                db.SaveChanges();
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         protected override void Dispose(bool disposing)
         {
-            if (disposing)
-            {
-                db.Dispose();
-            }
+            if (disposing) db.Dispose();
             base.Dispose(disposing);
         }
     }
