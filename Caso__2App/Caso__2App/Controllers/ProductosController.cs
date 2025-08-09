@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace Caso__2App.Controllers
 {
+    [Authorize]
     public class ProductosController : Controller
     {
         // GET: Productos
